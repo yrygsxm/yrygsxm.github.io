@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yrygsxm.github.io</id>
     <title>Simon&apos;s Blog</title>
-    <updated>2022-01-09T12:23:57.110Z</updated>
+    <updated>2022-01-09T12:27:40.767Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yrygsxm.github.io"/>
     <link rel="self" href="https://yrygsxm.github.io/atom.xml"/>
-    <subtitle>知识的荒原</subtitle>
+    <subtitle>一个人的荒原。</subtitle>
     <logo>https://yrygsxm.github.io/images/avatar.png</logo>
     <icon>https://yrygsxm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Simon&apos;s Blog</rights>
