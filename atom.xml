@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yrygsxm.github.io</id>
     <title>Simon&apos;s Blog</title>
-    <updated>2022-05-05T07:50:57.625Z</updated>
+    <updated>2022-05-05T07:52:23.315Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yrygsxm.github.io"/>
     <link rel="self" href="https://yrygsxm.github.io/atom.xml"/>
@@ -15,42 +15,42 @@
         <id>https://yrygsxm.github.io/小米刷机/</id>
         <link href="https://yrygsxm.github.io/小米刷机/">
         </link>
-        <updated>2022-05-04T19:03:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>#写在前面：<br>
-记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
+        <updated>2022-05-04T20:03:36.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="写在前面">写在前面：</h3>
+<p>记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
 <p>本文的契机是由于国行MIUI的隐私问题越来越严重，趁着五一假期，无奈走上了MIUI的欧洲版的刷机之路。</p>
 <p>在搜索教程的过程中，笔者发现刷机的时代已然悄悄消逝，相关教程少之又少，仅有的几篇教程集中在台湾板块，且都是陈旧的帖文。之后搜索英文相关教程，MIUI欧洲版（下文简称EU版）的官方论坛的教程寥寥数语，缺少刷机的关键步骤。幸运的是，折腾了一个下午，终于成功用上了EU版MIUI。为了让其他想刷机的朋友不再受此折磨，遂凭借回忆写出小米手机10至尊版刷EU版MIUI的一些经验。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>#写在前面：<br>
-记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
+        <content type="html"><![CDATA[<h3 id="写在前面">写在前面：</h3>
+<p>记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
 <p>本文的契机是由于国行MIUI的隐私问题越来越严重，趁着五一假期，无奈走上了MIUI的欧洲版的刷机之路。</p>
 <p>在搜索教程的过程中，笔者发现刷机的时代已然悄悄消逝，相关教程少之又少，仅有的几篇教程集中在台湾板块，且都是陈旧的帖文。之后搜索英文相关教程，MIUI欧洲版（下文简称EU版）的官方论坛的教程寥寥数语，缺少刷机的关键步骤。幸运的是，折腾了一个下午，终于成功用上了EU版MIUI。为了让其他想刷机的朋友不再受此折磨，遂凭借回忆写出小米手机10至尊版刷EU版MIUI的一些经验。</p>
 <!-- more -->
 <p>##最重要的话</p>
 <p>刷机之前请备份重要资料！！！</p>
-<p>#为什么选择EU版</p>
+<p>###为什么选择EU版</p>
 <p>小米的 MIUI 系统可以大致分为两大类：面向中国地区的大陆版，以及面向国际的国际版，国际版可以细分为欧美地区的欧版(EU版)、俄罗斯版、印度版等等。<br>
 小米国际版是给国外小米手机的通用版本，广告比较少，自带谷歌全家桶。EU版是欧盟认证的民间版本，是在大陆版系统基础上精简后的第三方版本，去掉了多余的系统级广告，以及小米游戏、小米钱包等一系列小米全家桶，加上（保留）谷歌框架，内置 Gboard、谷歌搜索等。</p>
-<p>#解锁Bootloader</p>
+<p>###解锁Bootloader</p>
 <p>1.绑定/确认解锁账号。<br>
 1.1 设置-我的设备-全部参数-点击【MIUI版本】数次-解锁开发者选项。<br>
 1.2 设置-更多设置-开发者选项-装置解锁状态-绑定小米账户</p>
 <p>2.电脑访问：http://www.miui.com/unlock/index.html ，下载解锁工具并解压。<br>
 3.双击 miflash_unlock.exe程序，登录你的小米账户并根据提示解锁手机Bootloader，初次解锁需要等待168小时。<br>
 4.如果符合要求（或168小时后），需要进入bootloader模式进行解锁。先关机，然后按住【音量下】+【关机键】，直到进入bootloader。连接电脑，按照软件提示进行解锁即可。</p>
-<p>#下载EU版本MIUI/国际版</p>
+<p>###下载EU版本MIUI/国际版</p>
 <p>EU测试版本（每周更新）：https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/22.4.27/</p>
 <p>EU稳定版本：https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv13/</p>
 <p>国际版：https://c.mi.com/global/miuidownload/index （选择你的型号）</p>
 <p>提示：MIUI-WEEKLY-RELEASES是每周最新测试版本，MIUI-STABLE-RELEASES是稳定运行版。</p>
-<p>#刷入第三方Recovery</p>
+<p>###刷入第三方Recovery</p>
 <p>*小米手机10至尊版推荐刷入第三方的TWRP，官方出品的无匹配型号。</p>
 <p>其它小米手机请直接到TWRP官网下载或者自行搜索第三方开发者的下载地址。</p>
 <p>小米手机10至尊版第三方的TWRP：https://drive.google.com/file/d/1ZCRTMMBKTCfcSfPZuJdKqNYjF7_1B49w/view?usp=sharing</p>
 <p>TWRP官网 : https://twrp.me/Devices/</p>
 <p>其它常用第三方 Recovery ：wzsx150，乌堆小透明，PitchBlack，OrangeFox（橙狐 Recovery），SHRP。<br>
 这里有详尽的介绍和链接：https://miuiver.com/third-party-recovery/</p>
-<p>#TWRP 刷入步骤</p>
+<p>###TWRP 刷入步骤</p>
 <ol>
 <li>
 <p>先将手机与电脑连接以便安装好驱动（如果安装失败，可下载 MiFlash 再手动安装）。另外确保手机已完成 BL 解锁。</p>
@@ -73,7 +73,7 @@ Developers -&gt; 手机进入fastboost模式-&gt;解压platform-tools压缩包-&
 </ol>
 <p>.\fastboot reboot</p>
 <p>6.刷入 Magisk 移除启动验证</p>
-<p>#刷入/更新MIUI EU系统</p>
+<p>###刷入/更新MIUI EU系统</p>
 <p>(1)方法一（适合能解锁data分区）<br>
 1)进入Recovery</p>
 <p>如果未进入Recovery，同时按住手机的电源键和音量+，几秒后进入Recovery。</p>
@@ -108,7 +108,7 @@ adb sideload Rom.zip<br>
 pause<br>
 然后将txt后缀改为bat。双击执行bat文件，等待电脑刷入完成。</p>
 <p>3)格式化data分区</p>
-<p>注意：</p>
+<p>##注意：</p>
 <p>仅在切换系统版本时需要进行此操作：从其它版本刷到EU、稳定版周测版切换<br>
 如果您不知道您是否应该执行此操作，请跟随操作此步骤<br>
 在SDK文件夹中新建文本文档，复制粘贴以下内容：</p>
