@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>小米手机10至尊版：MIUI欧洲版本刷机之路 | Simon&#39;s Blog</title>
+<link rel="shortcut icon" href="https://yrygsxm.github.io/favicon.ico?v=1651736922790">
+<link href="https://cdn.remixicon.com/releases/v2.1.0/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://yrygsxm.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="小米手机10至尊版：MIUI欧洲版本刷机之路 | Simon&#39;s Blog - Atom Feed" href="https://yrygsxm.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+#写在前面：
+记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://yrygsxm.github.io">
+  <img class="avatar" src="https://yrygsxm.github.io/images/avatar.png?v=1651736922790" alt="">
+  </a>
+  <h1 class="site-title">
+    Simon&#39;s Blog
+  </h1>
+  <p class="site-description">
+    一个人的荒原。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              小米手机10至尊版：MIUI欧洲版本刷机之路
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-05-05
+              </span>
+              <span>
+                7 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><img src="https://yrygsxm.github.io/post-images/1651736865548.png" alt="" loading="lazy"><br>
+#写在前面：<br>
+记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
+<p>本文的契机是由于国行MIUI的隐私问题越来越严重，趁着五一假期，无奈走上了MIUI的欧洲版的刷机之路。</p>
+<p>在搜索教程的过程中，笔者发现刷机的时代已然悄悄消逝，相关教程少之又少，仅有的几篇教程集中在台湾板块，且都是陈旧的帖文。之后搜索英文相关教程，MIUI欧洲版（下文简称EU版）的官方论坛的教程寥寥数语，缺少刷机的关键步骤。幸运的是，折腾了一个下午，终于成功用上了EU版MIUI。为了让其他想刷机的朋友不再受此折磨，遂凭借回忆写出小米手机10至尊版刷EU版MIUI的一些经验。</p>
+<!-- more -->
+<p>##最重要的话</p>
+<p>刷机之前请备份重要资料！！！</p>
+<p>#为什么选择EU版</p>
+<p>小米的 MIUI 系统可以大致分为两大类：面向中国地区的大陆版，以及面向国际的国际版，国际版可以细分为欧美地区的欧版(EU版)、俄罗斯版、印度版等等。<br>
+小米国际版是给国外小米手机的通用版本，广告比较少，自带谷歌全家桶。EU版是欧盟认证的民间版本，是在大陆版系统基础上精简后的第三方版本，去掉了多余的系统级广告，以及小米游戏、小米钱包等一系列小米全家桶，加上（保留）谷歌框架，内置 Gboard、谷歌搜索等。</p>
+<p>#解锁Bootloader</p>
+<p>1.绑定/确认解锁账号。<br>
+1.1 设置-我的设备-全部参数-点击【MIUI版本】数次-解锁开发者选项。<br>
+1.2 设置-更多设置-开发者选项-装置解锁状态-绑定小米账户</p>
+<p>2.电脑访问：http://www.miui.com/unlock/index.html ，下载解锁工具并解压。<br>
+3.双击 miflash_unlock.exe程序，登录你的小米账户并根据提示解锁手机Bootloader，初次解锁需要等待168小时。<br>
+4.如果符合要求（或168小时后），需要进入bootloader模式进行解锁。先关机，然后按住【音量下】+【关机键】，直到进入bootloader。连接电脑，按照软件提示进行解锁即可。</p>
+<p>#下载EU版本MIUI/国际版</p>
+<p>EU测试版本（每周更新）：https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-WEEKLY-RELEASES/22.4.27/</p>
+<p>EU稳定版本：https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv13/</p>
+<p>国际版：https://c.mi.com/global/miuidownload/index （选择你的型号）</p>
+<p>提示：MIUI-WEEKLY-RELEASES是每周最新测试版本，MIUI-STABLE-RELEASES是稳定运行版。</p>
+<p>#刷入第三方Recovery</p>
+<p>*小米手机10至尊版推荐刷入第三方的TWRP，官方出品的无匹配型号。</p>
+<p>其它小米手机请直接到TWRP官网下载或者自行搜索第三方开发者的下载地址。</p>
+<p>小米手机10至尊版第三方的TWRP：https://drive.google.com/file/d/1ZCRTMMBKTCfcSfPZuJdKqNYjF7_1B49w/view?usp=sharing</p>
+<p>TWRP官网 : https://twrp.me/Devices/</p>
+<p>其它常用第三方 Recovery ：wzsx150，乌堆小透明，PitchBlack，OrangeFox（橙狐 Recovery），SHRP。<br>
+这里有详尽的介绍和链接：https://miuiver.com/third-party-recovery/</p>
+<p>#TWRP 刷入步骤</p>
+<ol>
+<li>
+<p>先将手机与电脑连接以便安装好驱动（如果安装失败，可下载 MiFlash 再手动安装）。另外确保手机已完成 BL 解锁。</p>
+</li>
+<li>
+<p>电脑下载 Fastboot 工具<br>
+下载platform-tools 软件。<br>
+Developers -&gt; 手机进入fastboost模式-&gt;解压platform-tools压缩包-&gt;按住 Shift 键右键文件夹空白处，点击“在此处打开 Powershell 窗口”-&gt;）和对应机型 TWRP（.img 后缀文件，将其放入前面解压的文件夹里）。</p>
+</li>
+<li>
+<p>将手机关机，长按开机键 + 音量下键进入 fastboot 模式，与电脑连接。</p>
+</li>
+<li>
+<p>电脑打开刚才解压的 platform-tools 文件夹，按住 Shift 键，同时右键点击文件夹空白处，在右键菜单点击“在此处打开 Powershell 窗口”，运行下面命令刷入 TWRP（自行替换文件名）。</p>
+</li>
+</ol>
+<p>.\fastboot flash recovery twrp-3.4.0-0-davinci.img</p>
+<ol start="5">
+<li>为防止重启手机 MIUI 自动替换回官方 Recovery，按住手机音量上键，同时电脑运行下面命令重启手机，直至进入 TWRP 界面。（如果刷上文中的小米手机10至尊版第三方的TWRP，则无需这部，因为第三方的TWRP自带防止替换功能）</li>
+</ol>
+<p>.\fastboot reboot</p>
+<p>6.刷入 Magisk 移除启动验证</p>
+<p>#刷入/更新MIUI EU系统</p>
+<p>(1)方法一（适合能解锁data分区）<br>
+1)进入Recovery</p>
+<p>如果未进入Recovery，同时按住手机的电源键和音量+，几秒后进入Recovery。</p>
+<p>如果提示解锁密码，请输入锁屏密码。<br>
+如果无法触摸屏幕请等待几秒。<br>
+如果屏幕黑了，按下电源键重新点亮屏幕。<br>
+2)刷入系统</p>
+<p>然后将手机连入电脑，并把下载好的MIUI EU系统刷机包放入手机中。</p>
+<p>手机上安装放入的zip包。</p>
+<p>3)格式化data分区</p>
+<p>##注意：</p>
+<p>仅在切换系统版本时需要进行此操作：从其它版本刷到EU、稳定版周测版切换<br>
+不同的Recovery可能操作方法不同<br>
+如果您不知道您是否应该执行此操作，请跟随操作此步骤<br>
+TWRP：清除-格式化data分区-输入yes并回车</p>
+<p>橙狐OrangeFox：菜单-分区管理-Data-格式化Data分区-输入yes并回车</p>
+<p>(2)方法二（适合无法解锁data分区）<br>
+1)进入Recovery</p>
+<p>如果未进入Recovery，同时按住手机的电源键和音量+，几秒后进入Recovery。</p>
+<p>如果Rec未开启Adb &amp; Sideload，请开启。橙狐OrangeFox开启sideload方法：菜单-ADB &amp; Sideload-滑动以启动Sideload模式</p>
+<p>2)刷入系统</p>
+<p>在电脑上将刷机包放在Platform-Tools文件夹中，并重新命名为Rom.zip</p>
+<p>在SDK文件夹中新建文本文档，复制粘贴以下内容：</p>
+<p>@echo off<br>
+adb sideload Rom.zip<br>
+pause<br>
+1<br>
+2<br>
+3<br>
+@echo off<br>
+adb sideload Rom.zip<br>
+pause<br>
+然后将txt后缀改为bat。双击执行bat文件，等待电脑刷入完成。</p>
+<p>3)格式化data分区</p>
+<p>注意：</p>
+<p>仅在切换系统版本时需要进行此操作：从其它版本刷到EU、稳定版周测版切换<br>
+如果您不知道您是否应该执行此操作，请跟随操作此步骤<br>
+在SDK文件夹中新建文本文档，复制粘贴以下内容：</p>
+<p>@echo off<br>
+adb shell rm -rf /data/*<br>
+adb reboot<br>
+pause<br>
+1<br>
+2<br>
+3<br>
+4<br>
+@echo off<br>
+adb shell rm -rf /data/*<br>
+adb reboot<br>
+pause<br>
+然后将txt后缀改为bat。双击执行bat文件， 执行完后会自动进入系统。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://yrygsxm.github.io/2021haowu/">
+              <h3 class="post-title">
+                2021年：我的年度好物分享
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '42de4312b344f97772c7',
+    clientSecret: '9e3b969eefa3fe313ef4fbe4fe54ab9c5a4745b8',
+    repo: 'yrygsxm.github.io',
+    owner: 'yrygsxm',
+    admin: ['yrygsxm'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://t.me/AppDoDo" target="_blank">Simon＆APPDO数字生活指南
+</a>
+  <a class="rss" href="https://yrygsxm.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
