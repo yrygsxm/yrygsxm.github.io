@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yrygsxm.github.io</id>
     <title>Simon&apos;s Blog</title>
-    <updated>2022-05-05T07:50:34.398Z</updated>
+    <updated>2022-05-05T07:50:57.625Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yrygsxm.github.io"/>
     <link rel="self" href="https://yrygsxm.github.io/atom.xml"/>
@@ -15,15 +15,13 @@
         <id>https://yrygsxm.github.io/小米刷机/</id>
         <link href="https://yrygsxm.github.io/小米刷机/">
         </link>
-        <updated>2022-05-04T18:03:36.000Z</updated>
-        <summary type="html"><![CDATA[<p><img src="https://yrygsxm.github.io/post-images/1651736865548.png" alt="" loading="lazy"><br>
-#写在前面：<br>
+        <updated>2022-05-04T19:03:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>#写在前面：<br>
 记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
 <p>本文的契机是由于国行MIUI的隐私问题越来越严重，趁着五一假期，无奈走上了MIUI的欧洲版的刷机之路。</p>
 <p>在搜索教程的过程中，笔者发现刷机的时代已然悄悄消逝，相关教程少之又少，仅有的几篇教程集中在台湾板块，且都是陈旧的帖文。之后搜索英文相关教程，MIUI欧洲版（下文简称EU版）的官方论坛的教程寥寥数语，缺少刷机的关键步骤。幸运的是，折腾了一个下午，终于成功用上了EU版MIUI。为了让其他想刷机的朋友不再受此折磨，遂凭借回忆写出小米手机10至尊版刷EU版MIUI的一些经验。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p><img src="https://yrygsxm.github.io/post-images/1651736865548.png" alt="" loading="lazy"><br>
-#写在前面：<br>
+        <content type="html"><![CDATA[<p>#写在前面：<br>
 记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
 <p>本文的契机是由于国行MIUI的隐私问题越来越严重，趁着五一假期，无奈走上了MIUI的欧洲版的刷机之路。</p>
 <p>在搜索教程的过程中，笔者发现刷机的时代已然悄悄消逝，相关教程少之又少，仅有的几篇教程集中在台湾板块，且都是陈旧的帖文。之后搜索英文相关教程，MIUI欧洲版（下文简称EU版）的官方论坛的教程寥寥数语，缺少刷机的关键步骤。幸运的是，折腾了一个下午，终于成功用上了EU版MIUI。为了让其他想刷机的朋友不再受此折磨，遂凭借回忆写出小米手机10至尊版刷EU版MIUI的一些经验。</p>
