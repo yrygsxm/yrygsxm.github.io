@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yrygsxm.github.io</id>
     <title>Simon&apos;s Blog</title>
-    <updated>2022-05-05T07:48:44.905Z</updated>
+    <updated>2022-05-05T07:50:34.398Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yrygsxm.github.io"/>
     <link rel="self" href="https://yrygsxm.github.io/atom.xml"/>
@@ -12,10 +12,10 @@
     <rights>All rights reserved 2022, Simon&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[小米手机10至尊版：MIUI欧洲版本刷机之路]]></title>
-        <id>https://yrygsxm.github.io/9z9oRry0r/</id>
-        <link href="https://yrygsxm.github.io/9z9oRry0r/">
+        <id>https://yrygsxm.github.io/小米刷机/</id>
+        <link href="https://yrygsxm.github.io/小米刷机/">
         </link>
-        <updated>2022-05-04T17:03:36.000Z</updated>
+        <updated>2022-05-04T18:03:36.000Z</updated>
         <summary type="html"><![CDATA[<p><img src="https://yrygsxm.github.io/post-images/1651736865548.png" alt="" loading="lazy"><br>
 #写在前面：<br>
 记得我上次刷机的时候还在用小米手机1，那时候各种ROM刷机包可谓是百花齐放，各种ROM工具和教程也是层出不穷，我常常在各种手机论坛游荡，寻找最适合我的ROM包。后来逐渐摒弃安卓系统（仅做备用机），更换为了苹果全家桶，离刷机也渐行渐远。</p>
